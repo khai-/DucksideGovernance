@@ -110,7 +110,7 @@ export function VoterBubbleGraph(props: IVoterBubbleGraph) {
         .attr('x', 0)
         .attr('y', (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
         .attr('fill', 'white')
-        .text(d => d);
+        .text(d => (d as string));
 
       leaf.append('title').text(
         d =>
