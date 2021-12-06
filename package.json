@@ -47,7 +47,9 @@
     "node": "^16.13.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "yarn": "^1.22.10"
+    "yarn": "^1.22.10",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.15.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
