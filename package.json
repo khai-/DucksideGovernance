@@ -12,7 +12,7 @@
   },
   "scripts": {
     "bootstrap": "lerna link && lerna bootstrap",
-    "build": "lerna run build",
+    "build": "lerna run build --scope @oyster/common --stream --parallel --scope",
     "start": "CI=true lerna run start --scope @oyster/common --stream --parallel --scope ",
     "lint": "eslint 'packages/*/{src,test}/**/*.ts' && prettier -c 'packages/*/{src,test}/**/*.ts'",
     "lint:fix": "eslint --fix 'packages/*/{src,test}/**/*.ts' && prettier --write 'packages/*/{src,test}/**/*.ts'",
